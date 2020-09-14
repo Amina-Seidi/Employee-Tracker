@@ -2,7 +2,7 @@
  Unit 12 MySQL Homework: Employee Tracker
 
  # Demo
- ![Employee Tracker Demo](demo//)
+ ![Employee Tracker Demo](demo//Employee-Tracker.gif)
  
  # Table of Contents
 
