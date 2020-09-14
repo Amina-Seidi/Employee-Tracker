@@ -197,7 +197,7 @@ function viewData(){
                 name: "db",
                 message: 'Which would you like to view?',
                 type: 'list',
-                choices: ['department', 'role', 'employee'],
+                choices: ['department', 'roles', 'employee'],
             }
         ).then(function ({ db }) {
             connection.query(`SELECT * FROM ${db}`, function (err, data) {
@@ -241,7 +241,7 @@ function update_role() {
           employees.push(data[i].first_name)
       }
 
-      connection.query(`SELECT * FROM role`, function (err, data) {
+      connection.query(`SELECT * FROM roles`, function (err, data) {
           if (err) throw err;
 
           for (let i = 0; i < data.length; i++) {
